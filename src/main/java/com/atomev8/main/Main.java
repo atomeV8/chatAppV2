@@ -7,7 +7,6 @@ package com.atomev8.main;
 import com.atomev8.swing.ComponentResizer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -24,7 +23,6 @@ public class Main extends javax.swing.JFrame {
     }
     
     private void init(){
-        //this.setIconImage(new ImageIcon(getClass().getResource("/com/atomev8/icon/icon.png")).getImage());
         ComponentResizer com = new ComponentResizer();
         com.registerComponent(this);
         com.setMinimumSize(new Dimension(800,500));
@@ -44,7 +42,7 @@ public class Main extends javax.swing.JFrame {
         border = new javax.swing.JPanel();
         background = new javax.swing.JPanel();
         title = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnMinimize = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -68,21 +66,21 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/atomev8/icon/minimize.png"))); // NOI18N
+        btnMinimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/atomev8/icon/minimize.png"))); // NOI18N
 
         javax.swing.GroupLayout titleLayout = new javax.swing.GroupLayout(title);
         title.setLayout(titleLayout);
         titleLayout.setHorizontalGroup(
             titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleLayout.createSequentialGroup()
-                .addContainerGap(740, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addContainerGap(734, Short.MAX_VALUE)
+                .addComponent(btnMinimize)
                 .addGap(160, 160, 160))
         );
         titleLayout.setVerticalGroup(
             titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titleLayout.createSequentialGroup()
-                .addComponent(jButton1)
+                .addComponent(btnMinimize)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -97,7 +95,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(backgroundLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(475, Short.MAX_VALUE))
+                .addContainerGap(535, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout borderLayout = new javax.swing.GroupLayout(border);
@@ -184,7 +182,7 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel background;
     private javax.swing.JPanel border;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnMinimize;
     private javax.swing.JPanel title;
     // End of variables declaration//GEN-END:variables
 }
