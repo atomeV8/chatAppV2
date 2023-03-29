@@ -7,6 +7,7 @@ package com.atomev8.main;
 import com.atomev8.swing.ComponentResizer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -23,6 +24,7 @@ public class Main extends javax.swing.JFrame {
     }
     
     private void init(){
+        this.setIconImage(new ImageIcon(getClass().getResource("/com/atomev8/icon/minimize.png")).getImage());
         ComponentResizer com = new ComponentResizer();
         com.registerComponent(this);
         com.setMinimumSize(new Dimension(800,500));
@@ -66,14 +68,12 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        btnMinimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/atomev8/icon/minimize.png"))); // NOI18N
-
         javax.swing.GroupLayout titleLayout = new javax.swing.GroupLayout(title);
         title.setLayout(titleLayout);
         titleLayout.setHorizontalGroup(
             titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleLayout.createSequentialGroup()
-                .addContainerGap(734, Short.MAX_VALUE)
+                .addContainerGap(728, Short.MAX_VALUE)
                 .addComponent(btnMinimize)
                 .addGap(160, 160, 160))
         );
@@ -95,7 +95,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(backgroundLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(535, Short.MAX_VALUE))
+                .addContainerGap(595, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout borderLayout = new javax.swing.GroupLayout(border);

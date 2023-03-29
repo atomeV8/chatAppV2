@@ -80,7 +80,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="title" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="535" max="32767" attributes="0"/>
+                      <EmptySpace pref="595" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -102,7 +102,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="734" max="32767" attributes="0"/>
+                          <EmptySpace pref="728" max="32767" attributes="0"/>
                           <Component id="btnMinimize" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
                       </Group>
@@ -119,11 +119,6 @@
               </Layout>
               <SubComponents>
                 <Component class="javax.swing.JButton" name="btnMinimize">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/com/atomev8/icon/minimize.png"/>
-                    </Property>
-                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
